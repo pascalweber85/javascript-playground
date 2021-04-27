@@ -9,30 +9,35 @@ body {
   height: 100vh;
 }
 
-.box {
+.box1 {
   width: 200px;
   height: 200px;
   background: hotpink;
   transition: all 1s;
 }
 
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  transition: all 1s;
+}
+.box3 {
+  width: 200px;
+  height: 200px;
+  background: green;
+  transition: all 1s;
+}
+.box4 {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  transition: all 1s;
+}
 .blue {
   background: skyblue;
 }
 
-.rotate {
-  transform: rotate(45deg);
-}
-
-.background {
-  background: black;
-}
-
-.transform {
-  /* transition: transform 2.5s steps(5), background-color 0.6s ease-in-out; */
-  border-radius: 50%;
-}
-
-.button3 {
-  margin-top: 30px;
+.active {
+  background: hotpink;
 }
