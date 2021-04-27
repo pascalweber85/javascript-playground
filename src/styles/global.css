@@ -1,3 +1,20 @@
 @import './_variables.css';
 @import './_base.css';
 @import './_utility.css';
+
+body {
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: hotpink;
+}
+
+.blue {
+  background: skyblue;
+}
