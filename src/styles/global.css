@@ -18,3 +18,19 @@ body {
 .blue {
   background: skyblue;
 }
+
+.rotate {
+  transform: rotate(45deg);
+  transition: 1s;
+}
+
+.background {
+  background: black;
+  transition: 1s;
+}
+
+.transform {
+  /* transition: transform 2.5s steps(5), background-color 0.6s ease-in-out; */
+  border-radius: 50%;
+  transition: 1s;
+}

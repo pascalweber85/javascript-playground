@@ -4,14 +4,26 @@ const button1 = document.querySelector('.button1')
 const button2 = document.querySelector('.button2')
 const button3 = document.querySelector('.button3')
 
+// button1.addEventListener('click', () => {
+//   box.classList.add('blue')
+// })
+
+// button2.addEventListener('click', () => {
+//   box.classList.remove('blue')
+// })
+
+// button3.addEventListener('click', () => {
+//   box.classList.toggle('blue')
+// })
+
 button1.addEventListener('click', () => {
-  box.classList.add('blue')
+  box.classList.toggle('rotate')
 })
 
 button2.addEventListener('click', () => {
-  box.classList.remove('blue')
+  box.classList.toggle('background')
 })
 
 button3.addEventListener('click', () => {
-  box.classList.toggle('blue')
+  box.classList.toggle('transform')
 })
