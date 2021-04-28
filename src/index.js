@@ -1,3 +1,14 @@
-import AppHeader from './components/AppHeader'
+const form = document.querySelector('[data-form]')
+// const header = document.querySelector('[data-header]')//
+const input = document.querySelector('[data-input]')
+const box1 = document.querySelector('[data-box]')
 
-document.body.append(AppHeader('JavaScript App Template'))
+form.addEventListener('submit', currywurst => {
+  currywurst.preventDefault()
+  box1.classList.toggle(input.value)
+})
+
+// form.addEventListener('submit', currywurst => {
+//   currywurst.preventDefault()
+//   header.innerText = input.value
+// })
