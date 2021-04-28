@@ -1,14 +1,14 @@
 const form = document.querySelector('[data-form]')
-// const header = document.querySelector('[data-header]')//
 const input = document.querySelector('[data-input]')
 const box1 = document.querySelector('[data-box]')
+const output = document.querySelector('[data-output]')
 
-form.addEventListener('submit', currywurst => {
-  currywurst.preventDefault()
+form.addEventListener('submit', event => {
+  event.preventDefault()
   box1.classList.toggle(input.value)
+  const inputText = input.value
+  input.value = ''
+  input.focus()
+  const outputText = inputText.toUpperCase()
+  output.value = outputText
 })
-
-// form.addEventListener('submit', currywurst => {
-//   currywurst.preventDefault()
-//   header.innerText = input.value
-// })
