@@ -1,3 +1,14 @@
-import AppHeader from './components/AppHeader'
+const form = document.querySelector('[data-form]')
+const input = document.querySelector('[data-input]')
+const box1 = document.querySelector('[data-box]')
+const output = document.querySelector('[data-output]')
 
-document.body.append(AppHeader('JavaScript App Template'))
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  box1.classList.toggle(input.value)
+  const inputText = input.value
+  input.value = ''
+  input.focus()
+  const outputText = inputText.toUpperCase()
+  output.value = outputText
+})

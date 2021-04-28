@@ -1,3 +1,19 @@
 @import './_variables.css';
 @import './_base.css';
 @import './_utility.css';
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.box1 {
+  background: hotpink;
+  height: 200px;
+  width: 200px;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
