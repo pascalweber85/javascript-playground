@@ -7,13 +7,3 @@ body {
   place-items: center;
   height: 100vh;
 }
-
-.box1 {
-  background: hotpink;
-  height: 200px;
-  width: 200px;
-}
-
-.rotate {
-  transform: rotate(45deg);
-}

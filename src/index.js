@@ -1,14 +1,11 @@
 const form = document.querySelector('[data-form]')
-// const header = document.querySelector('[data-header]')//
-const input = document.querySelector('[data-input]')
-const box1 = document.querySelector('[data-box]')
+const input1 = document.querySelector('[name="input1"]')
+const input2 = document.querySelector('[name="input2"]')
 
-form.addEventListener('submit', currywurst => {
-  currywurst.preventDefault()
-  box1.classList.toggle(input.value)
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  const inputText1 = input1.value
+  const inputText2 = input2.value
+  input1.value = inputText2.toUpperCase()
+  input2.value = inputText1.toLowerCase()
 })
-
-// form.addEventListener('submit', currywurst => {
-//   currywurst.preventDefault()
-//   header.innerText = input.value
-// })
