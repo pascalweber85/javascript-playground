@@ -4,40 +4,16 @@
 
 body {
   display: grid;
-  gap: 20px;
-  place-content: center;
+  place-items: center;
   height: 100vh;
 }
 
 .box1 {
-  width: 200px;
-  height: 200px;
   background: hotpink;
-  transition: all 1s;
+  height: 200px;
+  width: 200px;
 }
 
-.box2 {
-  width: 200px;
-  height: 200px;
-  background: blue;
-  transition: all 1s;
-}
-.box3 {
-  width: 200px;
-  height: 200px;
-  background: green;
-  transition: all 1s;
-}
-.box4 {
-  width: 200px;
-  height: 200px;
-  background: yellow;
-  transition: all 1s;
-}
-.blue {
-  background: skyblue;
-}
-
-.active {
-  background: hotpink;
+.rotate {
+  transform: rotate(45deg);
 }
