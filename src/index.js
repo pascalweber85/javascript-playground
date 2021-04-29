@@ -1,26 +1,27 @@
 // const form = document.querySelector('[data-form]')
 const box = document.querySelector('.box')
-const nr1Slider = document.querySelector('[name="nr1"]')
-const nr2Slider = document.querySelector('[name="nr2"]')
-const nr3Slider = document.querySelector('[name="nr3"]')
-const nr4Slider = document.querySelector('[name="nr4"]')
+const rotationSlider = document.querySelector('[name="rotation"]')
+const colorSlider = document.querySelector('[name="color"]')
+const sizeSlider = document.querySelector('[name="size"]')
+const radiusSlider = document.querySelector('[name="radius"]')
 
-box.style.background = 'hsl(' + nr2Slider.value + 'deg, 100%, 50%)'
+box.style.transform = 'rotate(' + rotationSlider.value + 'deg)'
+box.style.background = 'hsl(' + colorSlider.value + 'deg, 100%, 50%)'
 
-nr1Slider.addEventListener('input', () => {
-  box.style.transform = 'rotate(' + nr1Slider.value + 'deg)'
+rotationSlider.addEventListener('input', () => {
+  box.style.transform = 'rotate(' + rotationSlider.value + 'deg)'
 })
 
-nr2Slider.addEventListener('input', () => {
-  box.style.background = 'hsl(' + nr2Slider.value + 'deg, 100%, 50%)'
+colorSlider.addEventListener('input', () => {
+  box.style.background = 'hsl(' + colorSlider.value + 'deg, 100%, 50%)'
 })
 
-nr3Slider.addEventListener('input', () => {
-  box.style.transform = 'rotate(' + nr1Slider.value + 'deg)'
+sizeSlider.addEventListener('input', () => {
+  box.style.transform = 'rotate(' + sizeSlider.value + 'deg)'
 })
 
-nr4Slider.addEventListener('input', () => {
-  box.style.background = 'hsl(' + nr2Slider.value + 'deg, 100%, 50%)'
+radiusSlider.addEventListener('input', () => {
+  box.style.background = 'hsl(' + radiusSlider.value + 'deg, 100%, 50%)'
 })
 
 // form.addEventListener('submit', event => {
