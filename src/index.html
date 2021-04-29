@@ -8,5 +8,32 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <script defer type="module" src="./index.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <header data-header></header>
+
+    <div class="box"></div>
+    <form data-form>
+      <div>
+        <label
+          >Rotation:<input name="rotation" type="range" max="360" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Color:<input type="range" name="color" min="0" max="360" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Size:<input name="size" type="range" min="50" max="250" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Radius:<input name="radius" type="range" min="0" max="50" />
+        </label>
+      </div>
+    </form>
+  </body>
 </html>
