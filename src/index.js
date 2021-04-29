@@ -2,7 +2,6 @@ const buttonHome = document.querySelector('.button-home')
 const buttonBookmarks = document.querySelector('.button-bookmarks')
 const buttonCreate = document.querySelector('.button-create')
 const buttonSettings = document.querySelector('.button-settings')
-
 const homePage = document.querySelector('.page-home')
 const bookmarksPage = document.querySelector('.page-bookmarks')
 const createPage = document.querySelector('.page-create')
