@@ -5,20 +5,22 @@ const nr2Slider = document.querySelector('[name="nr2"]')
 const nr3Slider = document.querySelector('[name="nr3"]')
 const nr4Slider = document.querySelector('[name="nr4"]')
 
+box.style.background = 'hsl(' + nr2Slider.value + 'deg, 100%, 50%)'
+
 nr1Slider.addEventListener('input', () => {
   box.style.transform = 'rotate(' + nr1Slider.value + 'deg)'
 })
 
 nr2Slider.addEventListener('input', () => {
-  box.style.backgroundColor = 'color(' + nr2Slider.value + 'rgb)'
+  box.style.background = 'hsl(' + nr2Slider.value + 'deg, 100%, 50%)'
 })
 
 nr3Slider.addEventListener('input', () => {
-  box.style.backgroundColor = 'color(' + nr3Slider.value + 'rgb)'
+  box.style.transform = 'rotate(' + nr1Slider.value + 'deg)'
 })
 
 nr4Slider.addEventListener('input', () => {
-  box.style.transform = 'rotate(' + nr4Slider.value + 'deg)'
+  box.style.background = 'hsl(' + nr2Slider.value + 'deg, 100%, 50%)'
 })
 
 // form.addEventListener('submit', event => {
