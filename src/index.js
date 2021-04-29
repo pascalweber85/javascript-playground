@@ -20,11 +20,12 @@ color.addEventListener('input', () => {
 })
 
 size.addEventListener('input', () => {
-  box.style.transform = 'rotate(' + size.value + 'deg)'
+  box.style.height = size.value + 'px'
+  box.style.width = size.value + 'px'
 })
 
 radius.addEventListener('input', () => {
-  box.style.background = 'hsl(' + radius.value + 'deg, 100%, 50%)'
+  box.style.borderRadius = radius.value + '%'
 })
 
 // form.addEventListener('submit', event => {
