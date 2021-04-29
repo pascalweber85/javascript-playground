@@ -1,11 +1,12 @@
-const form = document.querySelector('[data-form]')
+// const form = document.querySelector('[data-form]')
 const box = document.querySelector('.box')
-const input1 = document.querySelector('[name="input1"]')
+const nr1Slider = document.querySelector('[name="nr1"]')
+const nr2Slider = document.querySelector('[name="nr2"]')
 
-form.addEventListener('submit', event => {
-  event.preventDefault()
-  const inputText1 = input1.value
-  box.style.background = inputText1
-  form.reset()
-  input1.focus()
+nr1Slider.addEventListener('input', () => {
+  box.style.transform = 'rotate(' + nr1Slider.value + 'deg)'
+})
+
+nr2Slider.addEventListener('input', () => {
+  box.style.backgroundColor = 'color(' + nr2Slider.value + 'rgb)'
 })
