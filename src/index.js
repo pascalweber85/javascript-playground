@@ -7,37 +7,39 @@ const bookmarksPage = document.querySelector('.page-bookmarks')
 const createPage = document.querySelector('.page-create')
 const settingsPage = document.querySelector('.page-settings')
 
-buttonHome.addEventListener('click', () => {
+buttonHome.addEventListener('click', navigateToHome)
+buttonBookmarks.addEventListener('click', navigateToBookmarks)
+buttonCreate.addEventListener('click', navigateToCreate)
+buttonSettings.addEventListener('click', navigateToSettings)
+
+function navigateToHome() {
   changePage(homePage)
+  selectButton(buttonHome)
+}
 
-  deactivateButtons()
-  buttonHome.classList.add('active')
-})
-
-buttonBookmarks.addEventListener('click', () => {
+function navigateToBookmarks() {
   changePage(bookmarksPage)
+  selectButton(buttonBookmarks)
+}
 
-  deactivateButtons()
-  buttonBookmarks.classList.add('active')
-})
-
-buttonCreate.addEventListener('click', () => {
+function navigateToCreate() {
   changePage(createPage)
+  selectButton(buttonCreate)
+}
 
-  deactivateButtons()
-  buttonCreate.classList.add('active')
-})
-
-buttonSettings.addEventListener('click', () => {
+function navigateToSettings() {
   changePage(settingsPage)
-
-  deactivateButtons()
-  buttonSettings.classList.add('active')
-})
+  selectButton(buttonSettings)
+}
 
 function changePage(page) {
   hideAllPages()
   page.classList.remove('hidden')
+}
+
+function selectButton(button) {
+  deactivateButtons()
+  button.classList.add('active')
 }
 
 function hideAllPages() {
@@ -46,7 +48,6 @@ function hideAllPages() {
   createPage.classList.add('hidden')
   settingsPage.classList.add('hidden')
 }
-
 function deactivateButtons() {
   buttonHome.classList.remove('active')
   buttonBookmarks.classList.remove('active')
