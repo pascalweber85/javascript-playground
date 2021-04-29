@@ -1,27 +1,30 @@
 // const form = document.querySelector('[data-form]')
 const box = document.querySelector('.box')
-const rotationSlider = document.querySelector('[name="rotation"]')
-const colorSlider = document.querySelector('[name="color"]')
-const sizeSlider = document.querySelector('[name="size"]')
-const radiusSlider = document.querySelector('[name="radius"]')
+const rotation = document.querySelector('[name="rotation"]')
+const color = document.querySelector('[name="color"]')
+const size = document.querySelector('[name="size"]')
+const radius = document.querySelector('[name="radius"]')
 
-box.style.transform = 'rotate(' + rotationSlider.value + 'deg)'
-box.style.background = 'hsl(' + colorSlider.value + 'deg, 100%, 50%)'
+box.style.transform = 'rotate(' + rotation.value + 'deg)'
+box.style.background = 'hsl(' + color.value + 'deg, 100%, 50%)'
+box.style.height = size.value + 'px'
+box.style.width = size.value + 'px'
+box.style.borderRadius = radius.value + '%'
 
-rotationSlider.addEventListener('input', () => {
-  box.style.transform = 'rotate(' + rotationSlider.value + 'deg)'
+rotation.addEventListener('input', () => {
+  box.style.transform = 'rotate(' + rotation.value + 'deg)'
 })
 
-colorSlider.addEventListener('input', () => {
-  box.style.background = 'hsl(' + colorSlider.value + 'deg, 100%, 50%)'
+color.addEventListener('input', () => {
+  box.style.background = 'hsl(' + color.value + 'deg, 100%, 50%)'
 })
 
-sizeSlider.addEventListener('input', () => {
-  box.style.transform = 'rotate(' + sizeSlider.value + 'deg)'
+size.addEventListener('input', () => {
+  box.style.transform = 'rotate(' + size.value + 'deg)'
 })
 
-radiusSlider.addEventListener('input', () => {
-  box.style.background = 'hsl(' + radiusSlider.value + 'deg, 100%, 50%)'
+radius.addEventListener('input', () => {
+  box.style.background = 'hsl(' + radius.value + 'deg, 100%, 50%)'
 })
 
 // form.addEventListener('submit', event => {
@@ -30,4 +33,7 @@ radiusSlider.addEventListener('input', () => {
 //   const inputText2 = input2.value
 //   input1.value = inputText2.toUpperCase()
 //   input2.value = inputText1.toLowerCase()
+// })
+// colorSlider.addEventListener('input', () => {
+// box.style.background = 'hsl(' + colorSlider.value + 'deg, 100%, 50%)'
 // })
